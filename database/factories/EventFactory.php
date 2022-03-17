@@ -1,19 +1,19 @@
 <?php
 
-namespace Joy\VoyagerBreadReplaceKeyword\Database\Factories;
+namespace Joy\VoyagerBreadEvent\Database\Factories;
 
-use Joy\VoyagerBreadReplaceKeyword\Models\ReplaceKeyword;
+use Joy\VoyagerBreadEvent\Models\Event;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
-class ReplaceKeywordFactory extends Factory
+class EventFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = ReplaceKeyword::class;
+    protected $model = Event::class;
 
     /**
      * Define the model's default state.
@@ -37,7 +37,7 @@ class ReplaceKeywordFactory extends Factory
     {
         return $this->state(function (array $attributes) {
             return [
-                'status' => ReplaceKeyword::ACTIVE,
+                'status' => Event::ACTIVE,
             ];
         });
     }
@@ -51,7 +51,7 @@ class ReplaceKeywordFactory extends Factory
     {
         return $this->state(function (array $attributes) {
             return [
-                'status' => ReplaceKeyword::INACTIVE,
+                'status' => Event::INACTIVE,
             ];
         });
     }
@@ -65,7 +65,7 @@ class ReplaceKeywordFactory extends Factory
     {
         return $this->state(function (array $attributes) {
             return [
-                'status' => ReplaceKeyword::EXPIRED,
+                'status' => Event::EXPIRED,
             ];
         });
     }
