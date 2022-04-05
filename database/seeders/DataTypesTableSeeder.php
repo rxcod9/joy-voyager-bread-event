@@ -18,7 +18,7 @@ class DataTypesTableSeeder extends Seeder
                 'name'                  => 'events',
                 'display_name_singular' => __('joy-voyager-bread-event::seeders.data_types.event.singular'),
                 'display_name_plural'   => __('joy-voyager-bread-event::seeders.data_types.event.plural'),
-                'icon'                  => 'voyager-bread',
+                'icon'                  => 'voyager-bread voyager-bread-event voyager-calender',
                 'model_name'            => 'Joy\\VoyagerBreadEvent\\Models\\Event',
                 // 'policy_name'           => 'Joy\\VoyagerBreadEvent\\Policies\\EventPolicy',
                 // 'controller'            => 'Joy\\VoyagerBreadEvent\\Http\\Controllers\\VoyagerBreadEventController',
